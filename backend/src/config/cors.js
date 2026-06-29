@@ -16,7 +16,10 @@ const resolveOrigins = () => {
   if (list.length === 0) {
     // eslint-disable-next-line no-console
     console.warn('[cors] CORS_ORIGINS env var is empty — falling back to defaults');
-    return ['https://admin.greenyatra.in'];
+    return [
+      'https://admin.greenyatra.in',
+      'https://green-yatra-admin.onrender.com',
+    ];
   }
   return list;
 };
