@@ -1,0 +1,77 @@
+# ── Node Modules ─────────────────────────────────────────────
+node_modules/
+*/node_modules/
+**/node_modules/
+
+# ── Environment Files ─────────────────────────────────────────
+.env
+*.env
+# Allow .env.example to be checked in (it's the template)
+.env.example
+*.env.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ── React Native Native Folders ───────────────────────────────
+# These are GENERATED — run: npx react-native init GreenYatraIndia
+# then copy android/ and ios/ into mobile/ — see mobile/NATIVE_SETUP.md
+mobile/android/
+mobile/ios/
+
+# ── Firebase Config Files (sensitive) ────────────────────────
+mobile/android/app/google-services.json
+mobile/ios/GreenYatraIndia/GoogleService-Info.plist
+
+# ── Local-only API keys (sensitive) ─────────────────────────
+mobile/android/keys.properties
+mobile/ios/GreenYatraIndia.xcodeproj/MapsApiKey.xcconfig
+
+# ── Build Outputs ─────────────────────────────────────────────
+dist/
+build/
+.next/
+out/
+mobile/android/app/build/
+mobile/android/.gradle/
+*.apk
+*.aab
+*.ipa
+
+# ── React Native Cache ────────────────────────────────────────
+mobile/.expo/
+mobile/.metro-health-check-result.json
+mobile/android/local.properties
+
+# ── iOS ───────────────────────────────────────────────────────
+mobile/ios/Pods/
+mobile/ios/build/
+mobile/ios/*.xcworkspace
+*.jks
+*.keystore
+*.p8
+*.p12
+*.mobileprovision
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────
+.vscode/
+.idea/
+.claude
+*.suo
+*.ntvs*
+
+# ── Misc ─────────────────────────────────────────────────────
+.cache/
+coverage/

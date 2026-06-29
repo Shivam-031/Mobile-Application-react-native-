@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Green Yatra India app icon — master SVG.
+  White background, two leaves on a thin stem, forest green.
+
+  Designed on a 1024×1024 canvas so all raster exports (Android mipmaps
+  at mdpi/hdpi/xhdpi/xxhdpi/xxxhdpi + iOS @1x/2x/3x) are clean downsamples.
+  Background is rounded-square-shaped via a 24% corner radius (matches
+  Android Adaptive Icon "safe zone" practice) so the icon reads as a
+  proper app tile, not a flat square.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Rounded white tile background. 1024 × 0.24 ≈ 246 corner radius. -->
+  <rect x="0" y="0" width="1024" height="1024" rx="246" ry="246" fill="#FFFFFF"/>
+
+  <!-- Subtle inner border to keep the white tile legible on light home screens. -->
+  <rect x="2" y="2" width="1020" height="1020" rx="244" ry="244" fill="none" stroke="#E8F2EC" stroke-width="2"/>
+
+  <!--
+    Stem: thin vertical line from base of leaves down to near the bottom
+    of the safe zone. Starts at y≈660 (where the two leaves meet) and ends
+    at y≈900 (well inside the 24% safe padding). Stroke 22px reads clean
+    even at mdpi (48×48).
+  -->
+  <path d="M 512 660 L 512 900" stroke="#1F7A3A" stroke-width="22" stroke-linecap="round"/>
+
+  <!--
+    Left leaf: curves up-and-left from the stem. Built as a quadratic
+    Bézier where:
+      start  = stem-meet point        (512, 660)
+      control = out-and-up to the left (300, 420)
+      end     = leaf tip up-left      (340, 280)
+    Then closes back along a second curve to make a teardrop with a
+    pointed tip and rounded base where it joins the stem.
+  -->
+  <path d="
+      M 512 660
+      Q 300 420 340 280
+      Q 480 380 512 660
+      Z"
+    fill="#2E8B57"/>
+
+  <!--
+    Right leaf: mirror of the left, slightly higher so the two leaves
+    don't look identical (more organic). Tip at (684, 240).
+  -->
+  <path d="
+      M 512 640
+      Q 724 400 684 240
+      Q 544 340 512 640
+      Z"
+    fill="#2E8B57"/>
+
+  <!-- Leaf vein details — slightly darker green stroke, gives the leaves
+       depth without being noisy at small sizes. -->
+  <path d="M 512 660 Q 410 480 360 320" stroke="#1F7A3A" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M 512 640 Q 614 460 670 280" stroke="#1F7A3A" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

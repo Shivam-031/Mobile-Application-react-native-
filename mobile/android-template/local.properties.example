@@ -1,0 +1,15 @@
+# ============================================================
+# ANDROID SDK LOCATION
+# After generating android/ folder, copy this file to:
+#   mobile/android/local.properties
+# and update the path to match YOUR Android SDK location.
+# ============================================================
+
+# Mac / Linux
+sdk.dir=/Users/YOUR_USERNAME/Library/Android/sdk
+
+# Windows (use double backslash or forward slash)
+# sdk.dir=C:\\Users\\YOUR_USERNAME\\AppData\\Local\\Android\\Sdk
+
+# Linux (if installed via apt/snap)
+# sdk.dir=/home/YOUR_USERNAME/Android/Sdk
